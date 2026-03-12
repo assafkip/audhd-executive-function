@@ -1,12 +1,12 @@
 # AUDHD Executive Function Skill
 
-You are building an external executive function system for a founder with AUDHD (combined ADHD + Autism). This skill governs how ALL daily outputs are structured, especially the daily schedule HTML.
+You are building an external executive function system for a user with AUDHD (combined ADHD + Autism). This skill governs how ALL daily outputs are structured, especially the daily schedule HTML.
 
 **Always read these files first:**
 1. `.claude/skills/audhd-executive-function/references/research.md` - AUDHD research and design principles
-2. `.claude/skills/audhd-executive-function/references/assaf-profile.md` - this specific user's behavioral profile
+2. `.claude/skills/audhd-executive-function/references/user-profile.md` - this specific user's behavioral profile
 
-The daily HTML is not a briefing. It is the user's entire workday, pre-loaded and ready to execute action by action. The system IS his executive function, working memory, follow-up tracker, relationship manager, and copywriter.
+The daily HTML is not a briefing. It is the user's entire workday, pre-loaded and ready to execute action by action. The system IS their executive function, working memory, follow-up tracker, relationship manager, and copywriter.
 
 ---
 
@@ -21,22 +21,22 @@ Everything else flows from this.
 ## ACTIONABILITY RULES (ENFORCED)
 
 ### A1: No Cross-References
-Never say "see section above," "copy-paste from Lead Sourcing," or "refer to canonical file." Every checklist item contains the actual text inline with a Copy button. The user never scrolls or searches.
+Never say "see section above," "copy-paste from section X," or "refer to file Y." Every checklist item contains the actual text inline with a Copy button. The user never scrolls or searches.
 
 ### A2: Next Physical Action
-Every item is the literal next physical thing the user does. Not "Follow up with Ryan" but the actual email text in a copy box. If a draft can't be pre-written (needs user's eyes first), say exactly that: "Read Mark's DM first, then respond. No pre-written draft."
+Every item is the literal next physical thing the user does. Not "Follow up with Sarah" but the actual email text in a copy box. If a draft can't be pre-written (needs user's eyes first), say exactly that: "Read Sarah's message first, then respond. No pre-written draft."
 
 ### A3: All Pending Actions Get Drafts
-Every Notion Action with Priority "Today" or "This Week" and Due <= today appears in the HTML with a pre-written draft message. No action item exists without its corresponding copy-paste text.
+Every pending action that's due today or this week appears in the HTML with a pre-written draft message. No action item exists without its corresponding copy-paste text.
 
-### A4: 48-Hour Debrief Follow-ups
-All debriefs from the past 48 hours produce follow-up items with full draft text. Call happened yesterday = follow-up email is in today's Quick Wins.
+### A4: Recent Meeting Follow-ups
+All meetings from the past 48 hours produce follow-up items with full draft text. Call happened yesterday = follow-up email is in today's Quick Wins.
 
 ### A5: Dashboards at the Bottom
 Pipeline health, temperature scores, and analytics go in collapsed sections at the bottom. The top of the HTML is ONLY actionable items. A dashboard number without an attached action and draft is informational waste.
 
 ### A6: Risk Signals Get Recovery Drafts
-Every risk signal (score dropping, contact cooling, no reply past threshold) includes the specific recovery DM/email draft. "Phil score 5, dropping" becomes a copy-paste DM.
+Every risk signal (score dropping, contact cooling, no reply past threshold) includes the specific recovery DM/email draft. "Contact score dropping" becomes a copy-paste message.
 
 ### A7: Friction-Ordered
 Items sorted by friction, lowest first. 2-minute scheduling replies before 5-minute DMs before 10-minute emails. Quick momentum wins first to build dopamine.
@@ -48,13 +48,13 @@ Items sorted by friction, lowest first. 2-minute scheduling replies before 5-min
 ### Section Order (matches energy curve)
 1. **Quick Wins** - copy-paste scheduling replies, comments, short DMs (2-3 min each)
 2. **Messages** - longer DMs, connection requests, follow-up emails (3-5 min each)
-3. **Posts** - LinkedIn/X/Reddit content to publish (copy into composer)
-4. **Emails** - longer follow-ups, intel drops via email
+3. **Posts** - social content to publish (copy into composer)
+4. **Emails** - longer follow-ups, value-adds
 5. **Deep Focus** - meeting prep, research, writing (only if energy allows)
 6. **FYI** (collapsed) - auto-closed contacts, pipeline health, effort summary
 
 ### Every Item Has
-- Platform icon or badge (LinkedIn/X/Reddit/Email/Notion)
+- Platform icon or badge (LinkedIn/X/Reddit/Email/Slack/etc.)
 - Person name + company
 - What to do (one sentence)
 - The actual text in a copy-paste box with Copy button
@@ -64,7 +64,7 @@ Items sorted by friction, lowest first. 2-minute scheduling replies before 5-min
 - Energy tag (Quick Win / Deep Focus / People / Admin)
 
 ### Items That Cannot Be Pre-Written
-Some items need the user's judgment (e.g., reviewing an advisory agreement). For these, say exactly: "Read [X] first, then respond. No pre-written draft - needs your eyes." Never leave it vague.
+Some items need the user's judgment (e.g., reviewing a contract). For these, say exactly: "Read [X] first, then respond. No pre-written draft - needs your eyes." Never leave it vague.
 
 ---
 
@@ -77,7 +77,7 @@ Some items need the user's judgment (e.g., reviewing an advisory agreement). For
 - "forgot" (use "not yet done")
 - "dropped the ball" (never)
 - "behind" (use "in progress")
-- "urgent" as pressure (state facts calmly: "Haley's call is at 11:30am PT")
+- "urgent" as pressure (state facts calmly: "Meeting with Alex is at 11:30am")
 - "you need to" (use "you could")
 - "you should have" (never)
 - "nobody responded" (use "awaiting reply")
@@ -87,7 +87,7 @@ Some items need the user's judgment (e.g., reviewing an advisory agreement). For
 - Effort tracking: "You sent 4 messages yesterday" not outcome tracking
 - "Carried forward from yesterday" not "this is overdue"
 - "You could..." not "you need to..."
-- Calm factual statements: "Ryan's call was yesterday. Materials not yet sent."
+- Calm factual statements: "Call was yesterday. Materials not yet sent."
 
 ### Progress Framing
 - "5 of 12 done" is a win. Show what WAS done, never what wasn't
@@ -102,7 +102,7 @@ Some items need the user's judgment (e.g., reviewing an advisory agreement). For
 - Who to contact (based on priority, cooling risk, pipeline health)
 - What to say (pre-written in user's voice)
 - In what order (friction-sorted, momentum-first)
-- Through which channel (LinkedIn DM / email / comment / X reply)
+- Through which channel (DM / email / comment / reply)
 
 ### The User Executes
 - Copy text
@@ -111,10 +111,10 @@ Some items need the user's judgment (e.g., reviewing an advisory agreement). For
 - Check box
 
 ### Never Present Options
-Bad: "Here are 3 comment styles: Insight, Connector, Question. Which do you prefer?"
+Bad: "Here are 3 comment styles. Which do you prefer?"
 Good: One comment, ready to copy. User edits if they want to.
 
-Bad: "Would you like me to draft a follow-up for Costanoa?"
+Bad: "Would you like me to draft a follow-up?"
 Good: The follow-up is already there with copy-paste text.
 
 ---
@@ -134,7 +134,6 @@ Good: The follow-up is already there with copy-paste text.
 
 ### Skip Without Shame
 - If user skips an item, it moves to "carried forward" without commentary
-- "Not ready for outreach? Quick Wins are still here." (implied, never stated explicitly)
 - Every section is independently completable. Missing one module does not invalidate others
 
 ---
@@ -144,9 +143,9 @@ Good: The follow-up is already there with copy-paste text.
 Every person-related task shows inline context so the user never searches their memory:
 
 ```
-Ryan Hand / Menlo Ventures
-Last: Call Mar 10. Voiceover "incredibly helpful." Silo problem landed after Shiny Hunters example.
-Owed: Send deck (6 slides) + 10-pager + 2-pager. He takes to pipeline meeting.
+Jane Smith / Acme Corp
+Last: Call Tuesday. She liked the demo. Asked about integrations.
+Owed: Send pricing doc + case study. She presents to her VP Friday.
 ```
 
 Then the copy-paste email text. Context + action in one place.
@@ -157,9 +156,9 @@ Then the copy-paste email text. Context + action in one place.
 
 The system surfaces what fell through without the user remembering to check:
 
-- **Awaiting reply > 7 days:** Auto-generates follow-up draft. BUT FIRST: check Gmail sent folder and LinkedIn DMs to confirm the founder hasn't already replied. Never draft a nudge for a conversation the founder already responded to.
+- **Awaiting reply > 7 days:** Auto-generates follow-up draft. BUT FIRST: check sent messages to confirm the user hasn't already replied. Never draft a nudge for a conversation the user already responded to.
 - **No interaction > 14 days:** Flags with suggested re-engagement or auto-close
-- **Debriefed but not followed up:** Call happened, materials not sent
+- **Meeting happened but not followed up:** Call completed, materials not sent
 - **Scheduled but not confirmed:** Meeting booked but no confirmation sent
 - **Cooling contacts:** Score dropping, with specific recovery action
 
@@ -167,12 +166,11 @@ All of these appear as normal checklist items with copy-paste text. Not as alert
 
 ### Temperature Dashboard Wiring (ENFORCED)
 The temperature dashboard in the FYI section must be WIRED to actions:
-- Every row shows: Name / Role / Score / Trend / **Stage** (from 5-stage relationship engine) / **Next action link**
+- Every row shows: Name / Role / Score / Trend / **Stage** / **Next action link**
 - If the person has an action item in the HTML above, the row links to it (anchor)
-- If a contact is ↓ (trending down) and has NO action item above, a recovery draft MUST be auto-generated and added to the Messages or Quick Wins section. The dashboard row then links to that new action.
-- A ↓ without a linked action is a broken dashboard row. Never output one.
-- Cool contacts (1-3) either get a re-engagement action or get auto-closed. No limbo rows.
-- **Lead lifecycle rules** (`canonical/lead-lifecycle-rules.md`) override crack detection: if a contact has 3+ unreturned messages on a channel, do NOT generate another message on that channel. Suggest channel switch or ambient engagement instead. If a contact is Parked, do NOT surface them unless a trigger fired.
+- If a contact is trending down and has NO action item above, a recovery draft MUST be auto-generated and added to the Messages or Quick Wins section. The dashboard row then links to that new action.
+- A downtrend without a linked action is a broken dashboard row. Never output one.
+- Cool contacts either get a re-engagement action or get auto-closed. No limbo rows.
 
 ---
 
@@ -192,14 +190,14 @@ The temperature dashboard in the FYI section must be WIRED to actions:
 
 ## ANTI-PATTERNS (NEVER DO)
 
-1. **Temperature dashboard without actions.** Score 5 dropping means nothing unless the DM draft is right there.
+1. **Dashboard without actions.** A score means nothing unless the draft is right there.
 2. **Pipeline counts without per-person actions.** "8 hot prospects" is analytics. Show each person with their copy-paste next action.
 3. **"See above" or "see file."** Everything inline. Always.
 4. **Options to evaluate.** The system picks. The user overrides if they want.
 5. **Questions as tasks.** "Would you like to..." is not a task. The action is.
 6. **Empty sections.** If a section has zero actions, omit it entirely.
 7. **Abstract task names.** "Follow up with Jay" is not a task. The email text is.
-8. **Stacking pressure.** Never list 3+ "overdue" items together. Spread them across energy types.
+8. **Stacking pressure.** Never list 3+ carried-forward items together. Spread them across energy types.
 9. **Outcome metrics.** "0 replies received" triggers RSD. Track effort only.
 10. **Sequential dependencies.** If step 3 requires step 1's output, the system carries it forward. User never holds intermediate state.
 
@@ -215,7 +213,7 @@ Before outputting any daily HTML, verify:
 4. **Context test:** Does every person-item show last interaction and what's owed?
 5. **Zero-decision test:** Can the user start working without making any choices?
 6. **No-shame test:** Zero instances of overdue/missed/failed/forgot/dropped?
-7. **Crack test:** Are all pending actions from Notion surfaced? All 48h debrief follow-ups included?
+7. **Crack test:** Are all pending actions surfaced? All recent meeting follow-ups included?
 8. **Inline test:** Zero instances of "see above" or "see section" or "copy from X"?
 9. **Order test:** Are items sorted friction-first (fastest first)?
 10. **Independence test:** Can each section be completed independently? Does skipping one break others?

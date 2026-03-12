@@ -45,15 +45,15 @@ The skill instructs Claude to generate a daily HTML workbench (not a briefing) w
 ## What's in the box
 
 ```
-SKILL.md                          # The full skill definition
+SKILL.md                          # The full skill definition (generic, ready to use)
 references/
   research.md                     # AUDHD research (Barkley, Mahan, Dodson, 30+ sources)
-  assaf-profile.md                # Example user profile (customize for your own use)
+  user-profile.md                 # Template - fill in YOUR patterns, tools, and voice
 ```
 
-## Installation
+## Getting started
 
-### Claude Code
+### 1. Install
 
 Drop the folder into your project:
 
@@ -61,7 +61,9 @@ Drop the folder into your project:
 .claude/skills/audhd-executive-function/
 ```
 
-Then reference it in your `CLAUDE.md`:
+### 2. Tell Claude to use it
+
+Add this to your `CLAUDE.md`:
 
 ```markdown
 ## AUDHD Executive Function Rule (ENFORCED)
@@ -70,10 +72,21 @@ Every output the user will act on must follow the `audhd-executive-function` ski
 Read `.claude/skills/audhd-executive-function/SKILL.md` before generating any actionable output.
 ```
 
-### Customization
+### 3. Make it yours
 
-1. Edit `references/assaf-profile.md` with your own patterns (what works, what fails, energy patterns)
-2. The skill adapts to whatever tools and workflows you use. The rules are universal. The content is yours.
+Open `references/user-profile.md`. It's a template with prompts. Fill in:
+
+- **What works for you** - what actually helps you get things done?
+- **What fails for you** - what makes you freeze, avoid, or shut down?
+- **Energy patterns** - when do you flow? what drains you?
+- **Your tools** - what platforms does the system need to target? (Slack, Notion, Gmail, Linear, whatever)
+- **Your voice** - paste 2-3 real messages you've sent so the system writes like you, not like a robot
+
+The more honest you are in this file, the better the system works. Nobody sees it but your AI.
+
+### 4. Start using it
+
+Ask Claude to generate your daily schedule. It will read the skill, read your profile, and produce an HTML workbench where every item is copy-paste ready.
 
 ## Key design principles
 
