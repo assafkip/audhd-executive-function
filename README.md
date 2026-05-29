@@ -119,3 +119,7 @@ Built by a founder with AUDHD who got tired of productivity systems designed for
 ## License
 
 MIT
+
+---
+
+I built this AUDHD executive function system for my own work and open-sourced it. I ship paid Claude Code kits for founders at https://claudedaddy.gumroad.com, and I build these systems for teams that want one wired to their own setup. Book a call: https://calendar.app.google/cMFvhvDsfi9iyWYy9
