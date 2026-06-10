@@ -123,6 +123,6 @@ I built this AUDHD executive function skill for my own work and open-sourced the
 
 If you want the full playbook (the complete system, the daily HTML workbench spec, the voice and profile setup walked through end to end), I packaged it as the **AUDHD Executive Function Playbook ($39)**: https://claudedaddy.gumroad.com/l/isekq
 
-More Claude Code kits for founders: https://claudedaddy.gumroad.com
+More Claude Code kits for founders: https://claudedaddy.io
 
 Want one wired to your own setup? Book a call: https://calendar.app.google/cMFvhvDsfi9iyWYy9
